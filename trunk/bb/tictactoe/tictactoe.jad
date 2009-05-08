@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: tictactoe
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_blackberrymessenger
+MIDlet-Jar-Size: 0
+MIDlet-1: ,,
+RIM-COD-Creation-Time: 1241769938
+MIDlet-Jar-URL: tictactoe.jar
+RIM-COD-URL: tictactoe.cod
+RIM-COD-SHA1: 20 f8 fe eb f0 a1 78 bb 07 b6 c3 06 15 23 ab 88 b0 91 52 3a
+RIM-COD-Size: 31032
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.0
+MIDlet-Name: tictactoe
+MIDlet-Vendor: <unknown>
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0

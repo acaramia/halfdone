@@ -1,0 +1,24 @@
+TICTACTOE_CANCEL#0="Cancel";
+TICTACTOE_COMPUTER_WINS#0="BlackBerry Wins!!!";
+TICTACTOE_DIALOG_REQUESTING#0="Requesting two player game...";
+TICTACTOE_DIALOG_SESSION_ACCEPTED#0="Two player game accepted!";
+TICTACTOE_DIALOG_SESSION_REFUSED#0="Two player game declined.";
+TICTACTOE_DIFFICULTY#0="Difficulty level";
+TICTACTOE_EASY#0="Easy";
+TICTACTOE_GAME_ENDED#0="Opponent Quit!";
+TICTACTOE_GAME_OVER#0="Game Over!";
+TICTACTOE_HARD#0="Hard";
+TICTACTOE_JDE_URL#0="http://www.blackberry.com/developers/downloads/jde/index.shtml";
+
+TICTACTOE_MEDIUM#0="Medium";
+TICTACTOE_MENUITEM_CLOSE#0="Close";
+TICTACTOE_MENUITEM_NEWGAME#0="New Game";
+TICTACTOE_MENUITEM_NEWTWOGAME#0="New Two Player Game";
+TICTACTOE_OPPONENT_WINS#0="Your Opponent Wins!!!";
+TICTACTOE_SERVICE_NAME#0="Tic Tac Toe Sample";
+TICTACTOE_TIE_GAME#0="Tie Game!";
+TICTACTOE_TITLE#0="Tic Tac Toe";
+TICTACTOE_TURN_THEIRS#0="Their turn...";
+TICTACTOE_TURN_YOURS#0="Your turn...";
+TICTACTOE_WARNING_NO_BBM#0="BlackBerry Messenger not installed. Unable to start two player game.";
+TICTACTOE_YOU_WIN#0="You Win!!!";

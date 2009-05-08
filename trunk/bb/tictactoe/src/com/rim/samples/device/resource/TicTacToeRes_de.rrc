@@ -1,0 +1,10 @@
+TICTACTOE_COMPUTER_WINS#0="BlackBerry hat gewonnen!!!";
+TICTACTOE_DIFFICULTY#0="Schwierigkeitsgrad";
+TICTACTOE_EASY#0="Leicht";
+TICTACTOE_HARD#0="Schwer";
+TICTACTOE_MEDIUM#0="Mittel";
+TICTACTOE_MENUITEM_CLOSE#0="Schlieﬂen";
+TICTACTOE_MENUITEM_NEWGAME#0="Neues Spiel";
+TICTACTOE_TIE_GAME#0="Unentschieden!";
+TICTACTOE_TITLE#0="Tic Tac Toe";
+TICTACTOE_YOU_WIN#0="Sie haben gewonnen!!!";

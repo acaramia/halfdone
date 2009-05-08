@@ -1,0 +1,10 @@
+TICTACTOE_COMPUTER_WINS#0="BlackBerry a gagné!!!";
+TICTACTOE_DIFFICULTY#0="Niveau de difficulté";
+TICTACTOE_EASY#0="Facile";
+TICTACTOE_HARD#0="Difficile";
+TICTACTOE_MEDIUM#0="Moyen";
+TICTACTOE_MENUITEM_CLOSE#0="Fermer";
+TICTACTOE_MENUITEM_NEWGAME#0="Nouveau jeu";
+TICTACTOE_TIE_GAME#0="Match nul!";
+TICTACTOE_TITLE#0="Morpion";
+TICTACTOE_YOU_WIN#0="Vous avez gagné!!!";

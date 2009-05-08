@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+MIDlet-Version: 0.9
+MIDlet-Jar-Size: 51369
+RIM-COD-Module-Dependencies: net_rim_cldc,net_rim_bbapi_blackberrymessenger
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Jar-URL: com_rim_tictactoe.jar
+RIM-MIDlet-Flags-2: 3
+RIM-MIDlet-Flags-1: 0
+RIM-COD-Module-Name: com_rim_tictactoe
+RIM-COD-Size: 19084
+MIDlet-Name: com_rim_tictactoe
+RIM-COD-Creation-Time: 1240821552
+MIDlet-2: Tic Tac Toe Sample,,init
+MIDlet-1: Tic Tac Toe Sample,img/tictactoe_jde.png,
+RIM-COD-URL: com_rim_tictactoe.cod
+RIM-MIDlet-NameResourceId-2: 0
+RIM-MIDlet-NameResourceId-1: 0
+RIM-COD-SHA1: 5c 66 c4 22 d4 5d cb 92 ad 84 94 84 f3 72 1e 74 bc 8c e3 d6
+MicroEdition-Profile: MIDP-2.0
+MIDlet-Vendor: Research In Motion Ltd.
+RIM-MIDlet-NameResourceBundle-2: com.rim.samples.device.resource.TicTacToeRes
+RIM-MIDlet-NameResourceBundle-1: com.rim.samples.device.resource.TicTacToeRes
