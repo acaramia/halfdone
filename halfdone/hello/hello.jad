@@ -3,10 +3,10 @@ RIM-COD-Module-Name: hello
 RIM-COD-Module-Dependencies: net_rim_cldc
 MIDlet-Jar-Size: 3458
 MIDlet-1: ,,
-RIM-COD-Creation-Time: 1241102896
+RIM-COD-Creation-Time: 1241769933
 MIDlet-Jar-URL: hello.jar
 RIM-COD-URL: hello.cod
-RIM-COD-SHA1: 1b 69 40 9a 89 e0 56 1c 10 36 f9 e4 6e 8b b5 8c 9c 9d 09 62
+RIM-COD-SHA1: 2b 50 fe a3 13 b5 0f cb 8c 3f e7 90 30 62 43 4e e2 0e 89 5d
 RIM-COD-Size: 3516
 MicroEdition-Configuration: CLDC-1.1
 MIDlet-Version: 0.0
