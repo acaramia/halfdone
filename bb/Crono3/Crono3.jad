@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+RIM-COD-Module-Name: Crono3
+RIM-COD-Module-Dependencies: net_rim_cldc
+MIDlet-Jar-Size: 1607
+MIDlet-1: Crono3,,Crono2
+RIM-COD-Creation-Time: 1241102384
+MIDlet-Jar-URL: Crono3.jar
+RIM-COD-URL: Crono3.cod
+RIM-COD-SHA1: 79 9b 85 d4 3f 9c ef ef cb 61 b3 b4 9f b9 c3 64 ec 50 a2 1e
+RIM-COD-Size: 19192
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Version: 0.0
+MIDlet-Name: Crono3
+MIDlet-Vendor: <unknown>
+MicroEdition-Profile: MIDP-2.0
+RIM-MIDlet-Flags-1: 0
