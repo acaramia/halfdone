@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MIDlet-Name: Crono2
+Created-By: 1.4.2_16 (Sun Microsystems Inc.)
+MIDlet-Vendor: <unknown>
+MIDlet-1: Crono,,Crono2
+RIM-MIDlet-Flags-1: 0
+MIDlet-Jar-Size: 0
+MIDlet-Jar-URL: Crono2.jar
+MIDlet-Version: 0.0
+MicroEdition-Profile: MIDP-2.0
+
