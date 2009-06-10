@@ -1,4 +1,3 @@
-package E247;
 
 public class E247 {
 
