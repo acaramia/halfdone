@@ -20,7 +20,7 @@ public class E247b extends PApplet {
 		// noStroke();
 		fill(0, 0, 255);
 		// noFill();
-		quad(a, b, 12,0,0);
+		quad(a, b, 15, 0, 0);
 	}
 
 	void quad(float a, float b, int lev,int quadBot,int quadLeft) {
@@ -35,14 +35,16 @@ public class E247b extends PApplet {
 
 			if((quadLeft==3)&&(quadBot==3)){
 				fill(255, 0, 0);
-				System.out.println(lato);
+				rect(a - 1, b, lato, lato);
+				System.out.println(a+" "+b+" "+lato+" lev:"+lev);
 			} else {
 				fill(0, 0, 255);
 			}
-			rect(a - 1, b, lato, lato);
-			
-			quad(a + lato, b, lev - 1,quadBot,quadLeft+1);// dx
-			quad(a, b + lato, lev - 1,quadBot+1,quadLeft);// top
+
+			if((quadLeft<3) || (quadBot<3)){
+				quad(a + lato, b, lev - 1,quadBot,quadLeft+1);// dx
+				quad(a, b + lato, lev - 1,quadBot+1,quadLeft);// top
+			}
 		}
 	}
 
