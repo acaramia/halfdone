@@ -1,19 +1,8 @@
-import processing.core.*; 
-import processing.xml.*; 
-
-import traer.physics.*; 
-import traer.animation.*; 
-
-import java.applet.*; 
-import java.awt.*; 
-import java.awt.image.*; 
-import java.awt.event.*; 
-import java.io.*; 
-import java.net.*; 
-import java.text.*; 
-import java.util.*; 
-import java.util.zip.*; 
-import java.util.regex.*; 
+import processing.core.PApplet;
+import traer.animation.Smoother3D;
+import traer.physics.Particle;
+import traer.physics.ParticleSystem;
+import traer.physics.Spring;
 
 public class arb extends PApplet {
 
@@ -197,6 +186,15 @@ public void addNode(String s)
   addSpacersToNode( p, q );
   makeEdgeBetween( p, q );
   p.moveTo( q.position().x() + random( -1, 1 ), q.position().y() + random( -1, 1 ), 0 );
+}
+
+public Particle addNode(Particle toParticle)
+{ 
+  Particle newParticle = physics.makeParticle();
+  addSpacersToNode( newParticle, toParticle );
+  makeEdgeBetween( newParticle, toParticle );
+  newParticle.moveTo( toParticle.position().x() + random( -1, 1 ), toParticle.position().y() + random( -1, 1 ), 0 );
+  return newParticle;
 }
 
 
