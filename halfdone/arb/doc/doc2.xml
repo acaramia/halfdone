@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<nodi>
+<nodo><id>1</id><type>68-includetext</type><text> INCLUDETEXT "D:\\goltemplates\\Logo1.dot" </text></nodo>
+<nodo><id>2</id><type>6-?</type><text> SET _USO "{ DOCVARIABLE "TIPO_USO_VEICOLO"  }" </text></nodo>
+<nodo><id>3</id><type>64-docvar</type><text> DOCVARIABLE "TIPO_USO_VEICOLO"  </text></nodo>
+<nodo><id>4</id><type>6-?</type><text> SET _ALIM "{ DOCVARIABLE "TIPO_ALIMENTAZIONE"  }" </text></nodo>
+<nodo><id>5</id><type>64-docvar</type><text> DOCVARIABLE "TIPO_ALIMENTAZIONE"  </text></nodo>
+<nodo><id>6</id><type>6-?</type><text> SET _GRP_CONV "{ DOCVARIABLE "GRUPPO_CONVENZIONE"  }" </text></nodo>
+<nodo><id>7</id><type>64-docvar</type><text> DOCVARIABLE "GRUPPO_CONVENZIONE"  </text></nodo>
+<nodo><id>8</id><type>6-?</type><text> SET _FIX "{ DOCVARIABLE "NUMERO_FIX_CONTR"  }" </text></nodo>
+<nodo><id>9</id><type>64-docvar</type><text> DOCVARIABLE "NUMERO_FIX_CONTR"  </text></nodo>
+<nodo><id>10</id><type>6-?</type><text> SET _FAX "{ DOCVARIABLE "NUMERO_FAX_CONTR"  }" </text></nodo>
+<nodo><id>11</id><type>64-docvar</type><text> DOCVARIABLE "NUMERO_FAX_CONTR"  </text></nodo>
+<nodo><id>12</id><type>6-?</type><text> SET _MOB "{ DOCVARIABLE "NUMERO_MOB_CONTR"  }" </text></nodo>
+<nodo><id>13</id><type>64-docvar</type><text> DOCVARIABLE "NUMERO_MOB_CONTR"  </text></nodo>
+<nodo><id>14</id><type>6-?</type><text> SET _CON "{ DOCVARIABLE "CONDUCENTI"  }" </text></nodo>
+<nodo><id>15</id><type>64-docvar</type><text> DOCVARIABLE "CONDUCENTI"  </text></nodo>
+<nodo><id>16</id><type>6-?</type><text> SET _CONV "{ DOCVARIABLE "CONVENZIONE"  }" </text></nodo>
+<nodo><id>17</id><type>64-docvar</type><text> DOCVARIABLE "CONVENZIONE"  </text></nodo>
+<nodo><id>18</id><type>6-?</type><text> SET _AN "{ DOCVARIABLE "ANTIFURTO"  }" </text></nodo>
+<nodo><id>19</id><type>64-docvar</type><text> DOCVARIABLE "ANTIFURTO"  </text></nodo>
+<nodo><id>20</id><type>6-?</type><text> SET _KM "{ DOCVARIABLE "KM_ANNUI_PREVISTI"  }" </text></nodo>
+<nodo><id>21</id><type>64-docvar</type><text> DOCVARIABLE "KM_ANNUI_PREVISTI"  </text></nodo>
+<nodo><id>22</id><type>6-?</type><text> SET _TARGA "{ DOCVARIABLE "TARGA"  }" </text></nodo>
+<nodo><id>23</id><type>64-docvar</type><text> DOCVARIABLE "TARGA"  </text></nodo>
+<nodo><id>24</id><type>6-?</type><text> SET _ACQ "{ DOCVARIABLE "ANNO_ACQUISTO"  }" </text></nodo>
+<nodo><id>25</id><type>64-docvar</type><text> DOCVARIABLE "ANNO_ACQUISTO"  </text></nodo>
+<nodo><id>26</id><type>6-?</type><text> SET _ABS "{ DOCVARIABLE "ABS"  }" </text></nodo>
+<nodo><id>27</id><type>64-docvar</type><text> DOCVARIABLE "ABS"  </text></nodo>
+<nodo><id>28</id><type>6-?</type><text> SET _AIR "{ DOCVARIABLE "AIRBAG"  }" </text></nodo>
+<nodo><id>29</id><type>64-docvar</type><text> DOCVARIABLE "AIRBAG"  </text></nodo>
+<nodo><id>30</id><type>6-?</type><text> SET _BOX "{ DOCVARIABLE "BOX"  }" </text></nodo>
+<nodo><id>31</id><type>64-docvar</type><text> DOCVARIABLE "BOX"  </text></nodo>
+<nodo><id>32</id><type>6-?</type><text> SET _TPR "{ DOCVARIABLE "TIPO_PERSONA_RICH"  }" </text></nodo>
+<nodo><id>33</id><type>64-docvar</type><text> DOCVARIABLE "TIPO_PERSONA_RICH"  </text></nodo>
+<nodo><id>34</id><type>6-?</type><text> SET _TPC "{ DOCVARIABLE "TIPO_PERSONA_CONTR"  }" </text></nodo>
+<nodo><id>35</id><type>64-docvar</type><text> DOCVARIABLE "TIPO_PERSONA_CONTR"  </text></nodo>
+<nodo><id>36</id><type>6-?</type><text> SET _CP "{ DOCVARIABLE "DELLE_CONDIZIONI"  }" </text></nodo>
+<nodo><id>37</id><type>64-docvar</type><text> DOCVARIABLE "DELLE_CONDIZIONI"  </text></nodo>
+<nodo><id>38</id><type>6-?</type><text> SET _NOTE "{ DOCVARIABLE "NOTE"  }" </text></nodo>
+<nodo><id>39</id><type>64-docvar</type><text> DOCVARIABLE "NOTE"  </text></nodo>
+<nodo><id>40</id><type>6-?</type><text> SET _POTFISC "{ DOCVARIABLE "POTENZA_FISCALE"  }" </text></nodo>
+<nodo><id>41</id><type>64-docvar</type><text> DOCVARIABLE "POTENZA_FISCALE"  </text></nodo>
+<nodo><id>42</id><type>6-?</type><text> SET _KW "{ DOCVARIABLE "KW"  }" </text></nodo>
+<nodo><id>43</id><type>64-docvar</type><text> DOCVARIABLE "KW"  </text></nodo>
+<nodo><id>44</id><type>6-?</type><text> SET _MASSAQUINTALI "{ DOCVARIABLE "MASSA_QUINTALI"  }" </text></nodo>
+<nodo><id>45</id><type>64-docvar</type><text> DOCVARIABLE "MASSA_QUINTALI"  </text></nodo>
+<nodo><id>46</id><type>6-?</type><text> SET _BM "{ DOCVARIABLE "CLASSE_BM_ASSEGNAZIONE"  }" </text></nodo>
+<nodo><id>47</id><type>64-docvar</type><text> DOCVARIABLE "CLASSE_BM_ASSEGNAZIONE"  </text></nodo>
+<nodo><id>48</id><type>6-?</type><text> SET _UI "{ DOCVARIABLE "USO_INESPERTI"  }" </text></nodo>
+<nodo><id>49</id><type>64-docvar</type><text> DOCVARIABLE "USO_INESPERTI"  </text></nodo>
+<nodo><id>50</id><type>6-?</type><text> SET _VALCOM "{ DOCVARIABLE "VALORE_COMMERCIALE"  }" </text></nodo>
+<nodo><id>51</id><type>64-docvar</type><text> DOCVARIABLE "VALORE_COMMERCIALE"  </text></nodo>
+<nodo><id>52</id><type>6-?</type><text> SET X "{ DOCVARIABLE "SOGGETTI"  }" </text></nodo>
+<nodo><id>53</id><type>64-docvar</type><text> DOCVARIABLE "SOGGETTI"  </text></nodo>
+<nodo><id>54</id><type>6-?</type><text> SET CTV "{ DOCVARIABLE "COD_TIPO_VEICOLO"  }" </text></nodo>
+<nodo><id>55</id><type>64-docvar</type><text> DOCVARIABLE "COD_TIPO_VEICOLO"  </text></nodo>
+<nodo><id>56</id><type>6-?</type><text> SET _EMAIL "{ DOCVARIABLE "EMAIL_CONTR"  }" </text></nodo>
+<nodo><id>57</id><type>64-docvar</type><text> DOCVARIABLE "EMAIL_CONTR"  </text></nodo>
+<nodo><id>58</id><type>6-?</type><text> SET PVCONTR "{ DOCVARIABLE "PROVINCIA_CONTR"  }" </text></nodo>
+<nodo><id>59</id><type>64-docvar</type><text> DOCVARIABLE "PROVINCIA_CONTR"  </text></nodo>
+<nodo><id>60</id><type>6-?</type><text> SET PVCIRC "{ DOCVARIABLE "COD_PROVINCIA_CIRCOLAZIONE"  }" </text></nodo>
+<nodo><id>61</id><type>64-docvar</type><text> DOCVARIABLE "COD_PROVINCIA_CIRCOLAZIONE"  </text></nodo>
+<nodo><id>62</id><type>6-?</type><text> SET _RATA "{ DOCVARIABLE "TIPO_RATEAZIONE"  }"  </text></nodo>
+<nodo><id>63</id><type>64-docvar</type><text> DOCVARIABLE "TIPO_RATEAZIONE"  </text></nodo>
+<nodo><id>64</id><type>6-?</type><text> SET SA "{ DOCVARIABLE "SITUAZIONE_ASSICURATIVA"  }"  </text></nodo>
+<nodo><id>65</id><type>64-docvar</type><text> DOCVARIABLE "SITUAZIONE_ASSICURATIVA"  </text></nodo>
+<nodo><id>66</id><type>6-?</type><text> SET CU "{ DOCVARIABLE "CLASSE_UNIVERSALE"  }"  </text></nodo>
+<nodo><id>67</id><type>64-docvar</type><text> DOCVARIABLE "CLASSE_UNIVERSALE"  </text></nodo>
+<nodo><id>68</id><type>64-docvar</type><text> DOCVARIABLE  NUMERO_PREVENTIVO </text></nodo>
+<nodo><id>69</id><type>64-docvar</type><text> DOCVARIABLE  DATA_PREVENTIVO </text></nodo>
+<nodo><id>70</id><type>64-docvar</type><text> DOCVARIABLE DATA_DECORRENZA </text></nodo>
+<nodo><id>71</id><type>64-docvar</type><text> DOCVARIABLE DATA_SCADENZA </text></nodo>
+<nodo><id>72</id><type>7-if</type><text> IF { COMPARE X = "RP" } = 1 "RICHIEDENTE e PROPRIETARIO DEL VEICOLO#" "{ IF {  = OR ({ COMPARE X = "CP" }, { COMPARE X = " " }) } = 1 "RICHIEDENTE#" "" }" </text></nodo>
+<nodo><id>73</id><type>80-compare</type><text> COMPARE X = "RP" </text></nodo>
+<nodo><id>74</id><type>7-if</type><text> IF {  = OR ({ COMPARE X = "CP" }, { COMPARE X = " " }) } = 1 "RICHIEDENTE#" "" </text></nodo>
+<nodo><id>75</id><type>34-expression</type><text>  = OR ({ COMPARE X = "CP" }, { COMPARE X = " " }) </text></nodo>
+<nodo><id>76</id><type>80-compare</type><text> COMPARE X = "CP" </text></nodo>
+<nodo><id>77</id><type>80-compare</type><text> COMPARE X = " " </text></nodo>
+<nodo><id>78</id><type>7-if</type><text> IF { = OR ({  = OR ({ COMPARE X = "RP" }, { COMPARE X = "CP" }) },{ COMPARE X = " " }) }  = 1 "{ DOCVARIABLE  "DENOMINAZIONE_RICH"   }#{ IF { COMPARE _TPR = "PERSONA_FISICA" } = 1 "c.f.: { DOCVARIABLE  "CODICE_FISCALE_RICH"   }" "p.i.: { DOCVARIABLE  "PARTITA_IVA_RICH"   }" }#" ""</text></nodo>
+<nodo><id>79</id><type>34-expression</type><text> = OR ({  = OR ({ COMPARE X = "RP" }, { COMPARE X = "CP" }) },{ COMPARE X = " " }) </text></nodo>
+<nodo><id>80</id><type>34-expression</type><text>  = OR ({ COMPARE X = "RP" }, { COMPARE X = "CP" }) </text></nodo>
+<nodo><id>81</id><type>80-compare</type><text> COMPARE X = "RP" </text></nodo>
+<nodo><id>82</id><type>80-compare</type><text> COMPARE X = "CP" </text></nodo>
+<nodo><id>83</id><type>80-compare</type><text> COMPARE X = " " </text></nodo>
+<nodo><id>84</id><type>64-docvar</type><text> DOCVARIABLE  "DENOMINAZIONE_RICH"   </text></nodo>
+<nodo><id>85</id><type>7-if</type><text> IF { COMPARE _TPR = "PERSONA_FISICA" } = 1 "c.f.: { DOCVARIABLE  "CODICE_FISCALE_RICH"   }" "p.i.: { DOCVARIABLE  "PARTITA_IVA_RICH"   }" </text></nodo>
+<nodo><id>86</id><type>80-compare</type><text> COMPARE _TPR = "PERSONA_FISICA" </text></nodo>
+<nodo><id>87</id><type>64-docvar</type><text> DOCVARIABLE  "CODICE_FISCALE_RICH"   </text></nodo>
+<nodo><id>88</id><type>64-docvar</type><text> DOCVARIABLE  "PARTITA_IVA_RICH"   </text></nodo>
+<nodo><id>89</id><type>64-docvar</type><text> DOCVARIABLE  "PARTITA_IVA_RICH"   </text></nodo>
+<nodo><id>90</id><type>7-if</type><text> IF { COMPARE X = "RCP" } = 1 "RICHIEDENTE,CONTRAENTE e PROPRIETARIO DEL VEICOLO" "{ IF { COMPARE X = "RC" } = 1 "RICHIEDENTE e CONTRAENTE" "{ IF { COMPARE X = "CP" } = 1 "CONTRAENTE e PROPRIETARIO DEL VEICOLO" "CONTRAENTE" }" }" </text></nodo>
+<nodo><id>91</id><type>80-compare</type><text> COMPARE X = "RCP" </text></nodo>
+<nodo><id>92</id><type>7-if</type><text> IF { COMPARE X = "RC" } = 1 "RICHIEDENTE e CONTRAENTE" "{ IF { COMPARE X = "CP" } = 1 "CONTRAENTE e PROPRIETARIO DEL VEICOLO" "CONTRAENTE" }" </text></nodo>
+<nodo><id>93</id><type>80-compare</type><text> COMPARE X = "RC" </text></nodo>
+<nodo><id>94</id><type>7-if</type><text> IF { COMPARE X = "CP" } = 1 "CONTRAENTE e PROPRIETARIO DEL VEICOLO" "CONTRAENTE" </text></nodo>
+<nodo><id>95</id><type>80-compare</type><text> COMPARE X = "CP" </text></nodo>
+<nodo><id>96</id><type>64-docvar</type><text> DOCVARIABLE  "DENOMINAZIONE_CONTR"   </text></nodo>
+<nodo><id>97</id><type>7-if</type><text> IF { COMPARE _TPC = "PERSONA_FISICA" } = 1 "c.f.: { DOCVARIABLE  "CODICE_FISCALE_CONTR"   }" "p.i.: { DOCVARIABLE  "PARTITA_IVA_CONTR"   }" </text></nodo>
+<nodo><id>98</id><type>80-compare</type><text> COMPARE _TPC = "PERSONA_FISICA" </text></nodo>
+<nodo><id>99</id><type>64-docvar</type><text> DOCVARIABLE  "CODICE_FISCALE_CONTR"   </text></nodo>
+<nodo><id>100</id><type>64-docvar</type><text> DOCVARIABLE  "PARTITA_IVA_CONTR"   </text></nodo>
+<nodo><id>101</id><type>64-docvar</type><text> DOCVARIABLE "COD_TOPONOMASTICO_CONTR"  </text></nodo>
+<nodo><id>102</id><type>64-docvar</type><text> DOCVARIABLE "NOME_VIA_CONTR"  </text></nodo>
+<nodo><id>103</id><type>64-docvar</type><text> DOCVARIABLE "NUM_CIVICO_CONTR"  </text></nodo>
+<nodo><id>104</id><type>64-docvar</type><text> DOCVARIABLE "CAP_CONTR"  </text></nodo>
+<nodo><id>105</id><type>64-docvar</type><text> DOCVARIABLE "FRAZIONE_CONTR"  </text></nodo>
+<nodo><id>106</id><type>64-docvar</type><text> DOCVARIABLE "PROVINCIA_CONTR"  </text></nodo>
+<nodo><id>107</id><type>7-if</type><text> IF { COMPARE _FIX != " " } = 1 "#Tel.: { DOCVARIABLE "PREFISSO_NAZ_FIX_CONTR"  }/{ DOCVARIABLE "NUMERO_FIX_CONTR"  }" ""</text></nodo>
+<nodo><id>108</id><type>80-compare</type><text> COMPARE _FIX != " " </text></nodo>
+<nodo><id>109</id><type>64-docvar</type><text> DOCVARIABLE "PREFISSO_NAZ_FIX_CONTR"  </text></nodo>
+<nodo><id>110</id><type>64-docvar</type><text> DOCVARIABLE "NUMERO_FIX_CONTR"  </text></nodo>
+<nodo><id>111</id><type>7-if</type><text> IF { COMPARE _FIX != " " } = 1 "{ IF { COMPARE _FAX != " " } = 1 "Fax: { DOCVARIABLE "PREFISSO_NAZ_FAX_CONTR"  }/{ DOCVARIABLE "NUMERO_FAX_CONTR"  }" ""}" "{ IF { COMPARE _FAX != " " } = 1 "#Fax: { DOCVARIABLE "PREFISSO_NAZ_FAX_CONTR"  }/{ DOCVARIABLE "NUMERO_FAX_CONTR"  }" ""}" </text></nodo>
+<nodo><id>112</id><type>80-compare</type><text> COMPARE _FIX != " " </text></nodo>
+<nodo><id>113</id><type>7-if</type><text> IF { COMPARE _FAX != " " } = 1 "Fax: { DOCVARIABLE "PREFISSO_NAZ_FAX_CONTR"  }/{ DOCVARIABLE "NUMERO_FAX_CONTR"  }" ""</text></nodo>
+<nodo><id>114</id><type>80-compare</type><text> COMPARE _FAX != " " </text></nodo>
+<nodo><id>115</id><type>64-docvar</type><text> DOCVARIABLE "PREFISSO_NAZ_FAX_CONTR"  </text></nodo>
+<nodo><id>116</id><type>64-docvar</type><text> DOCVARIABLE "NUMERO_FAX_CONTR"  </text></nodo>
+<nodo><id>117</id><type>64-docvar</type><text> DOCVARIABLE "PREFISSO_NAZ_FAX_CONTR"  </text></nodo>
+<nodo><id>118</id><type>64-docvar</type><text> DOCVARIABLE "NUMERO_FAX_CONTR"  </text></nodo>
+<nodo><id>119</id><type>7-if</type><text> IF { COMPARE _FAX != " " } = 1 "#Fax: { DOCVARIABLE "PREFISSO_NAZ_FAX_CONTR"  }/{ DOCVARIABLE "NUMERO_FAX_CONTR"  }" ""</text></nodo>
+<nodo><id>120</id><type>80-compare</type><text> COMPARE _FAX != " " </text></nodo>
+<nodo><id>121</id><type>64-docvar</type><text> DOCVARIABLE "PREFISSO_NAZ_FAX_CONTR"  </text></nodo>
+<nodo><id>122</id><type>64-docvar</type><text> DOCVARIABLE "NUMERO_FAX_CONTR"  </text></nodo>
+<nodo><id>123</id><type>7-if</type><text> IF { COMPARE _MOB != " " } = 1 "#Cell.: { DOCVARIABLE "PREFISSO_NAZ_MOB_CONTR"  }/{ DOCVARIABLE "NUMERO_MOB_CONTR" }" "" </text></nodo>
+<nodo><id>124</id><type>80-compare</type><text> COMPARE _MOB != " " </text></nodo>
+<nodo><id>125</id><type>64-docvar</type><text> DOCVARIABLE "PREFISSO_NAZ_MOB_CONTR"  </text></nodo>
+<nodo><id>126</id><type>64-docvar</type><text> DOCVARIABLE "NUMERO_MOB_CONTR" </text></nodo>
+<nodo><id>127</id><type>7-if</type><text> IF { COMPARE _EMAIL != " " } = 1 "#E-mail: { DOCVARIABLE "EMAIL_CONTR"  }" "" </text></nodo>
+<nodo><id>128</id><type>80-compare</type><text> COMPARE _EMAIL != " " </text></nodo>
+<nodo><id>129</id><type>64-docvar</type><text> DOCVARIABLE "EMAIL_CONTR"  </text></nodo>
+<nodo><id>130</id><type>64-docvar</type><text> DOCVARIABLE "RATING_GENERTEL" </text></nodo>
+<nodo><id>131</id><type>7-if</type><text> IF {  = OR ({ COMPARE X = "RC" }, { COMPARE X = " " }) } = 1 "PROPRIETARIO DEL VEICOLO #{ DOCVARIABLE "PROPRIETARI"  }#" "" </text></nodo>
+<nodo><id>132</id><type>34-expression</type><text>  = OR ({ COMPARE X = "RC" }, { COMPARE X = " " }) </text></nodo>
+<nodo><id>133</id><type>80-compare</type><text> COMPARE X = "RC" </text></nodo>
+<nodo><id>134</id><type>80-compare</type><text> COMPARE X = " " </text></nodo>
+<nodo><id>135</id><type>64-docvar</type><text> DOCVARIABLE "PROPRIETARI"  </text></nodo>
+<nodo><id>136</id><type>7-if</type><text> IF { COMPARE _CON != " " } = 1 "UTILIZZATORI ABITUALI DEL VEICOLO#Num. utilizzatori: { DOCVARIABLE "NUM_UTILIZZATORI" }#{ DOCVARIABLE "CONDUCENTI" }" "" </text></nodo>
+<nodo><id>137</id><type>80-compare</type><text> COMPARE _CON != " " </text></nodo>
+<nodo><id>138</id><type>64-docvar</type><text> DOCVARIABLE "NUM_UTILIZZATORI" </text></nodo>
+<nodo><id>139</id><type>64-docvar</type><text> DOCVARIABLE "CONDUCENTI" </text></nodo>
+<nodo><id>140</id><type>64-docvar</type><text> DOCVARIABLE  "DATANASCUTIL" </text></nodo>
+<nodo><id>141</id><type>64-docvar</type><text> DOCVARIABLE "SESSO" </text></nodo>
+<nodo><id>142</id><type>64-docvar</type><text> DOCVARIABLE "TIPO_GUIDA" </text></nodo>
+<nodo><id>143</id><type>64-docvar</type><text> DOCVARIABLE "MARCA" </text></nodo>
+<nodo><id>144</id><type>64-docvar</type><text> DOCVARIABLE "MODELLO" </text></nodo>
+<nodo><id>145</id><type>64-docvar</type><text> DOCVARIABLE "ALLESTIMENTO" </text></nodo>
+<nodo><id>146</id><type>7-if</type><text> IF { COMPARE _TARGA != " " } = 1 " [150] Targa { DOCVARIABLE  "TARGA" }" "" </text></nodo>
+<nodo><id>147</id><type>80-compare</type><text> COMPARE _TARGA != " " </text></nodo>
+<nodo><id>148</id><type>64-docvar</type><text> DOCVARIABLE  "TARGA" </text></nodo>
+<nodo><id>149</id><type>64-docvar</type><text> DOCVARIABLE  "ANNO_IMMATRICOLAZIONE"   </text></nodo>
+<nodo><id>150</id><type>7-if</type><text> IF { COMPARE _ACQ != " " } = 1 " - Acquisto: { DOCVARIABLE  "ANNO_ACQUISTO"   }" "" </text></nodo>
+<nodo><id>151</id><type>80-compare</type><text> COMPARE _ACQ != " " </text></nodo>
+<nodo><id>152</id><type>64-docvar</type><text> DOCVARIABLE  "ANNO_ACQUISTO"   </text></nodo>
+<nodo><id>153</id><type>7-if</type><text> IF { COMPARE _POTFISC != " " } = 1 "#Potenza cavalli fiscali: { DOCVARIABLE  "POTENZA_FISCALE" }" "" </text></nodo>
+<nodo><id>154</id><type>80-compare</type><text> COMPARE _POTFISC != " " </text></nodo>
+<nodo><id>155</id><type>64-docvar</type><text> DOCVARIABLE  "POTENZA_FISCALE" </text></nodo>
+<nodo><id>156</id><type>7-if</type><text> IF { COMPARE _KW != " " } = 1 "#Potenza Kw: { DOCVARIABLE  "KW"   }" "" </text></nodo>
+<nodo><id>157</id><type>80-compare</type><text> COMPARE _KW != " " </text></nodo>
+<nodo><id>158</id><type>64-docvar</type><text> DOCVARIABLE  "KW"   </text></nodo>
+<nodo><id>159</id><type>7-if</type><text> IF { COMPARE _ALIM != " " } = 1 "#Tipo alimentazione: { DOCVARIABLE  "TIPO_ALIMENTAZIONE"   }" "" </text></nodo>
+<nodo><id>160</id><type>80-compare</type><text> COMPARE _ALIM != " " </text></nodo>
+<nodo><id>161</id><type>64-docvar</type><text> DOCVARIABLE  "TIPO_ALIMENTAZIONE"   </text></nodo>
+<nodo><id>162</id><type>7-if</type><text> IF { COMPARE _USO != " " } = 1 "#Uso veicolo: { DOCVARIABLE  "TIPO_USO_VEICOLO"   }" "" </text></nodo>
+<nodo><id>163</id><type>80-compare</type><text> COMPARE _USO != " " </text></nodo>
+<nodo><id>164</id><type>64-docvar</type><text> DOCVARIABLE  "TIPO_USO_VEICOLO"   </text></nodo>
+<nodo><id>165</id><type>7-if</type><text> IF { COMPARE _MASSAQUINTALI != " " } = 1 "#Quintali a pieno carico: { DOCVARIABLE  "MASSA_QUINTALI"   }" "" </text></nodo>
+<nodo><id>166</id><type>80-compare</type><text> COMPARE _MASSAQUINTALI != " " </text></nodo>
+<nodo><id>167</id><type>64-docvar</type><text> DOCVARIABLE  "MASSA_QUINTALI"   </text></nodo>
+<nodo><id>168</id><type>7-if</type><text> IF { COMPARE _VALCOM != " " } = 1 "#Valore commerciale veicolo: { DOCVARIABLE  "VALORE_COMMERCIALE"   }" "" </text></nodo>
+<nodo><id>169</id><type>80-compare</type><text> COMPARE _VALCOM != " " </text></nodo>
+<nodo><id>170</id><type>64-docvar</type><text> DOCVARIABLE  "VALORE_COMMERCIALE"   </text></nodo>
+<nodo><id>171</id><type>7-if</type><text> IF { COMPARE _ABS != " " } = 1 "#ABS: { DOCVARIABLE  "ABS"   }" "" </text></nodo>
+<nodo><id>172</id><type>80-compare</type><text> COMPARE _ABS != " " </text></nodo>
+<nodo><id>173</id><type>64-docvar</type><text> DOCVARIABLE  "ABS"   </text></nodo>
+<nodo><id>174</id><type>7-if</type><text> IF { COMPARE _AIR != " " } = 1 " - Airbag: { DOCVARIABLE  "AIRBAG"   }" "" </text></nodo>
+<nodo><id>175</id><type>80-compare</type><text> COMPARE _AIR != " " </text></nodo>
+<nodo><id>176</id><type>64-docvar</type><text> DOCVARIABLE  "AIRBAG"   </text></nodo>
+<nodo><id>177</id><type>7-if</type><text> IF { COMPARE _ABS = " " } = 1 "#" "{ IF { COMPARE _BOX != " " } = 1 " - " "" }" </text></nodo>
+<nodo><id>178</id><type>80-compare</type><text> COMPARE _ABS = " " </text></nodo>
+<nodo><id>179</id><type>7-if</type><text> IF { COMPARE _BOX != " " } = 1 " - " "" </text></nodo>
+<nodo><id>180</id><type>80-compare</type><text> COMPARE _BOX != " " </text></nodo>
+<nodo><id>181</id><type>7-if</type><text> IF { COMPARE _BOX != " " } = 1 "Box: { DOCVARIABLE  "BOX"   }" "" </text></nodo>
+<nodo><id>182</id><type>80-compare</type><text> COMPARE _BOX != " " </text></nodo>
+<nodo><id>183</id><type>64-docvar</type><text> DOCVARIABLE  "BOX"   </text></nodo>
+<nodo><id>184</id><type>7-if</type><text> IF { COMPARE _AN != " " } = 1 "#Antifurto: { DOCVARIABLE  "ANTIFURTO"   }" "" </text></nodo>
+<nodo><id>185</id><type>80-compare</type><text> COMPARE _AN != " " </text></nodo>
+<nodo><id>186</id><type>64-docvar</type><text> DOCVARIABLE  "ANTIFURTO"   </text></nodo>
+<nodo><id>187</id><type>7-if</type><text> IF { COMPARE _KM != " " } = 1 "#Km annui previsti: { DOCVARIABLE  "KM_ANNUI_PREVISTI"   }" "" </text></nodo>
+<nodo><id>188</id><type>80-compare</type><text> COMPARE _KM != " " </text></nodo>
+<nodo><id>189</id><type>64-docvar</type><text> DOCVARIABLE  "KM_ANNUI_PREVISTI"   </text></nodo>
+<nodo><id>190</id><type>64-docvar</type><text> DOCVARIABLE  "ANZIANITA_CONTRATTO"   </text></nodo>
+<nodo><id>191</id><type>64-docvar</type><text> DOCVARIABLE  "NUMERO_SINISTRI"   </text></nodo>
+<nodo><id>192</id><type>7-if</type><text> IF { COMPARE _BM != " " } = 1 "Classe b/m di assegnazione: { DOCVARIABLE  "CLASSE_BM_ASSEGNAZIONE"   }" "" </text></nodo>
+<nodo><id>193</id><type>80-compare</type><text> COMPARE _BM != " " </text></nodo>
+<nodo><id>194</id><type>64-docvar</type><text> DOCVARIABLE  "CLASSE_BM_ASSEGNAZIONE"   </text></nodo>
+<nodo><id>195</id><type>7-if</type><text> IF { COMPARE PVCONTR != PVCIRC } = 1 "#Provincia di circolazione: { DOCVARIABLE  "COD_PROVINCIA_CIRCOLAZIONE"   }" "" </text></nodo>
+<nodo><id>196</id><type>80-compare</type><text> COMPARE PVCONTR != PVCIRC </text></nodo>
+<nodo><id>197</id><type>64-docvar</type><text> DOCVARIABLE  "COD_PROVINCIA_CIRCOLAZIONE"   </text></nodo>
+<nodo><id>198</id><type>7-if</type><text> IF { COMPARE CU = " " } = 1 "NON APPL." "{ DOCVARIABLE "CLASSE_UNIVERSALE" }" </text></nodo>
+<nodo><id>199</id><type>80-compare</type><text> COMPARE CU = " " </text></nodo>
+<nodo><id>200</id><type>64-docvar</type><text> DOCVARIABLE "CLASSE_UNIVERSALE" </text></nodo>
+<nodo><id>201</id><type>64-docvar</type><text> DOCVARIABLE  "SOLVIBILITA"   </text></nodo>
+<nodo><id>202</id><type>64-docvar</type><text> DOCVARIABLE  "FIDUCIA"   </text></nodo>
+<nodo><id>203</id><type>64-docvar</type><text> DOCVARIABLE  "RATEAZIONE"   </text></nodo>
+<nodo><id>204</id><type>64-docvar</type><text> DOCVARIABLE "NOTA_VANDALICI_FRANCHIGIA" </text></nodo>
+<nodo><id>205</id><type>64-docvar</type><text> DOCVARIABLE "NOTA_VANDALICI_FRANCHIGIA_IMPORTO" </text></nodo>
+<nodo><id>206</id><type>7-if</type><text> IF { COMPARE _RATA  = "Unica"  } = 1 "#PREMIO#imposte e CSSN compresi#@Euro { DOCVARIABLE "PREMIO_TOTALE" }#(di cui premio RC euro { DOCVARIABLE "PREMIOSCONTATORC"})#@Premio unico#@#@" "#PREMIO#imposte e CSSN compresi#@1[170] rata: Euro { DOCVARIABLE "PRIMA_RATA" }#2[170] rata: Euro { DOCVARIABLE "SECONDA_RATA" }#@Rata { DOCVARIABLE "TIPO_RATEAZIONE"  } da#{ DOCVARIABLE "DATA_PRIMA_RATA"  }#@#@"  </text></nodo>
+<nodo><id>207</id><type>80-compare</type><text> COMPARE _RATA  = "Unica"  </text></nodo>
+<nodo><id>208</id><type>64-docvar</type><text> DOCVARIABLE "PREMIO_TOTALE" </text></nodo>
+<nodo><id>209</id><type>64-docvar</type><text> DOCVARIABLE "PREMIOSCONTATORC"</text></nodo>
+<nodo><id>210</id><type>64-docvar</type><text> DOCVARIABLE "PRIMA_RATA" </text></nodo>
+<nodo><id>211</id><type>64-docvar</type><text> DOCVARIABLE "SECONDA_RATA" </text></nodo>
+<nodo><id>212</id><type>64-docvar</type><text> DOCVARIABLE "TIPO_RATEAZIONE"  </text></nodo>
+<nodo><id>213</id><type>64-docvar</type><text> DOCVARIABLE "DATA_PRIMA_RATA"  </text></nodo>
+<nodo><id>214</id><type>64-docvar</type><text>DOCVARIABLE "SCONTOTOTALERCA" </text></nodo>
+<nodo><id>215</id><type>64-docvar</type><text>DOCVARIABLE "SCONTOTOTALEARD" </text></nodo>
+<nodo><id>216</id><type>7-if</type><text> IF { COMPARE _CONV != " " } = 1 "#CONVENZIONE: #A questo preventivo si applicano le condizioni previste dalla convenzione { DOCVARIABLE "NOME_CONVENZIONE" } ({ DOCVARIABLE "CONVENZIONE" }){ IF { COMPARE _CONV = "CPM" } = 1 " La stipula di questo preventivo d[224] diritto al contraente ad un Buono rimborso del valore di 50,00 Euro. Il rimborso verr[224] effettuato presso il punto vendita PAM/BATA dove ha richiesto e ottenuto la carta vantaggi previa presentazione alla cassa dell'originale di polizza Genertel e lo scarico di 2.900 punti dalla medesima carta.#" "" }#@#@" "" </text></nodo>
+<nodo><id>217</id><type>80-compare</type><text> COMPARE _CONV != " " </text></nodo>
+<nodo><id>218</id><type>64-docvar</type><text> DOCVARIABLE "NOME_CONVENZIONE" </text></nodo>
+<nodo><id>219</id><type>64-docvar</type><text> DOCVARIABLE "CONVENZIONE" </text></nodo>
+<nodo><id>220</id><type>7-if</type><text> IF { COMPARE _CONV = "CPM" } = 1 " La stipula di questo preventivo d[224] diritto al contraente ad un Buono rimborso del valore di 50,00 Euro. Il rimborso verr[224] effettuato presso il punto vendita PAM/BATA dove ha richiesto e ottenuto la carta vantaggi previa presentazione alla cassa dell'originale di polizza Genertel e lo scarico di 2.900 punti dalla medesima carta.#" "" </text></nodo>
+<nodo><id>221</id><type>80-compare</type><text> COMPARE _CONV = "CPM" </text></nodo>
+<nodo><id>222</id><type>7-if</type><text> IF { COMPARE  _CP = "si" } = 1 "#CONDIZIONI PARTICOLARI:#{ DOCVARIABLE "CONDIZIONI" }##@#@" "" </text></nodo>
+<nodo><id>223</id><type>80-compare</type><text> COMPARE  _CP = "si" </text></nodo>
+<nodo><id>224</id><type>64-docvar</type><text> DOCVARIABLE "CONDIZIONI" </text></nodo>
+<nodo><id>225</id><type>7-if</type><text> IF { COMPARE {DOCVARIABLE "IMPORTO_PROVVRCA"} != "0" } = 1 "In caso di acquisto, sulla polizza verr[224] riconosciuta all[146]intermediario una provvigione di [128] {DOCVARIABLE "IMPORTO_PROVVRCA"} (pari al {DOCVARIABLE "PERCENTUALE_PROVVRCA"} del premio globale RC)." "In caso di acquisto, sulla polizza non verr[224] riconosciuta alcuna provvigione ad intermediari." </text></nodo>
+<nodo><id>226</id><type>80-compare</type><text> COMPARE {DOCVARIABLE "IMPORTO_PROVVRCA"} != "0" </text></nodo>
+<nodo><id>227</id><type>64-docvar</type><text>DOCVARIABLE "IMPORTO_PROVVRCA"</text></nodo>
+<nodo><id>228</id><type>64-docvar</type><text>DOCVARIABLE "IMPORTO_PROVVRCA"</text></nodo>
+<nodo><id>229</id><type>64-docvar</type><text>DOCVARIABLE "PERCENTUALE_PROVVRCA"</text></nodo>
+<nodo><id>230</id><type>7-if</type><text> IF { COMPARE _NOTE != " " } = 1 "#NOTE:#{ DOCVARIABLE "NOTE" }#@#@" "" </text></nodo>
+<nodo><id>231</id><type>80-compare</type><text> COMPARE _NOTE != " " </text></nodo>
+<nodo><id>232</id><type>64-docvar</type><text> DOCVARIABLE "NOTE" </text></nodo>
+
+</nodi>
+<relazioni>
+<tree id="2">
+<leaf id="3"/>
+</tree>
+<tree id="4">
+<leaf id="5"/>
+</tree>
+<tree id="6">
+<leaf id="7"/>
+</tree>
+<tree id="8">
+<leaf id="9"/>
+</tree>
+<tree id="10">
+<leaf id="11"/>
+</tree>
+<tree id="12">
+<leaf id="13"/>
+</tree>
+<tree id="14">
+<leaf id="15"/>
+</tree>
+<tree id="16">
+<leaf id="17"/>
+</tree>
+<tree id="18">
+<leaf id="19"/>
+</tree>
+<tree id="20">
+<leaf id="21"/>
+</tree>
+<tree id="22">
+<leaf id="23"/>
+</tree>
+<tree id="24">
+<leaf id="25"/>
+</tree>
+<tree id="26">
+<leaf id="27"/>
+</tree>
+<tree id="28">
+<leaf id="29"/>
+</tree>
+<tree id="30">
+<leaf id="31"/>
+</tree>
+<tree id="32">
+<leaf id="33"/>
+</tree>
+<tree id="34">
+<leaf id="35"/>
+</tree>
+<tree id="36">
+<leaf id="37"/>
+</tree>
+<tree id="38">
+<leaf id="39"/>
+</tree>
+<tree id="40">
+<leaf id="41"/>
+</tree>
+<tree id="42">
+<leaf id="43"/>
+</tree>
+<tree id="44">
+<leaf id="45"/>
+</tree>
+<tree id="46">
+<leaf id="47"/>
+</tree>
+<tree id="48">
+<leaf id="49"/>
+</tree>
+<tree id="50">
+<leaf id="51"/>
+</tree>
+<tree id="52">
+<leaf id="53"/>
+</tree>
+<tree id="54">
+<leaf id="55"/>
+</tree>
+<tree id="56">
+<leaf id="57"/>
+</tree>
+<tree id="58">
+<leaf id="59"/>
+</tree>
+<tree id="60">
+<leaf id="61"/>
+</tree>
+<tree id="62">
+<leaf id="63"/>
+</tree>
+<tree id="64">
+<leaf id="65"/>
+</tree>
+<tree id="66">
+<leaf id="67"/>
+</tree>
+<tree id="72">
+<leaf id="73"/>
+<tree id="74">
+<tree id="75">
+<leaf id="76"/>
+<leaf id="77"/>
+</tree>
+</tree>
+</tree>
+<tree id="78">
+<tree id="79">
+<tree id="80">
+<leaf id="81"/>
+<leaf id="82"/>
+</tree>
+<leaf id="83"/>
+</tree>
+<leaf id="84"/>
+<tree id="85">
+<leaf id="86"/>
+<leaf id="87"/>
+<leaf id="88"/>
+</tree>
+<leaf id="89"/>
+</tree>
+<tree id="90">
+<leaf id="91"/>
+<tree id="92">
+<leaf id="93"/>
+<tree id="94">
+<leaf id="95"/>
+</tree>
+</tree>
+</tree>
+<tree id="97">
+<leaf id="98"/>
+<leaf id="99"/>
+<leaf id="100"/>
+</tree>
+<tree id="107">
+<leaf id="108"/>
+<leaf id="109"/>
+<leaf id="110"/>
+</tree>
+<tree id="111">
+<leaf id="112"/>
+<tree id="113">
+<leaf id="114"/>
+<leaf id="115"/>
+<leaf id="116"/>
+</tree>
+<leaf id="117"/>
+<leaf id="118"/>
+<tree id="119">
+<leaf id="120"/>
+<leaf id="121"/>
+<leaf id="122"/>
+</tree>
+</tree>
+<tree id="123">
+<leaf id="124"/>
+<leaf id="125"/>
+<leaf id="126"/>
+</tree>
+<tree id="127">
+<leaf id="128"/>
+<leaf id="129"/>
+</tree>
+<tree id="131">
+<tree id="132">
+<leaf id="133"/>
+<leaf id="134"/>
+</tree>
+<leaf id="135"/>
+</tree>
+<tree id="136">
+<leaf id="137"/>
+<leaf id="138"/>
+<leaf id="139"/>
+</tree>
+<tree id="146">
+<leaf id="147"/>
+<leaf id="148"/>
+</tree>
+<tree id="150">
+<leaf id="151"/>
+<leaf id="152"/>
+</tree>
+<tree id="153">
+<leaf id="154"/>
+<leaf id="155"/>
+</tree>
+<tree id="156">
+<leaf id="157"/>
+<leaf id="158"/>
+</tree>
+<tree id="159">
+<leaf id="160"/>
+<leaf id="161"/>
+</tree>
+<tree id="162">
+<leaf id="163"/>
+<leaf id="164"/>
+</tree>
+<tree id="165">
+<leaf id="166"/>
+<leaf id="167"/>
+</tree>
+<tree id="168">
+<leaf id="169"/>
+<leaf id="170"/>
+</tree>
+<tree id="171">
+<leaf id="172"/>
+<leaf id="173"/>
+</tree>
+<tree id="174">
+<leaf id="175"/>
+<leaf id="176"/>
+</tree>
+<tree id="177">
+<leaf id="178"/>
+<tree id="179">
+<leaf id="180"/>
+</tree>
+</tree>
+<tree id="181">
+<leaf id="182"/>
+<leaf id="183"/>
+</tree>
+<tree id="184">
+<leaf id="185"/>
+<leaf id="186"/>
+</tree>
+<tree id="187">
+<leaf id="188"/>
+<leaf id="189"/>
+</tree>
+<tree id="192">
+<leaf id="193"/>
+<leaf id="194"/>
+</tree>
+<tree id="195">
+<leaf id="196"/>
+<leaf id="197"/>
+</tree>
+<tree id="198">
+<leaf id="199"/>
+<leaf id="200"/>
+</tree>
+<tree id="206">
+<leaf id="207"/>
+<leaf id="208"/>
+<leaf id="209"/>
+<leaf id="210"/>
+<leaf id="211"/>
+<leaf id="212"/>
+<leaf id="213"/>
+</tree>
+<tree id="216">
+<leaf id="217"/>
+<leaf id="218"/>
+<leaf id="219"/>
+<tree id="220">
+<leaf id="221"/>
+</tree>
+</tree>
+<tree id="222">
+<leaf id="223"/>
+<leaf id="224"/>
+</tree>
+<tree id="225">
+<tree id="226">
+<leaf id="227"/>
+</tree>
+<leaf id="228"/>
+<leaf id="229"/>
+</tree>
+<tree id="230">
+<leaf id="231"/>
+<leaf id="232"/>
+</tree>
+
+</relazioni>
+</root>
