@@ -29,6 +29,8 @@ public void setup()
   centroid = new Smoother3D( 0.8f );
     
   initialize();
+  Contenitore c=new Contenitore();
+  c.init(this);
 }
 
 public void draw()
@@ -186,6 +188,10 @@ public void addNode(String s)
   addSpacersToNode( p, q );
   makeEdgeBetween( p, q );
   p.moveTo( q.position().x() + random( -1, 1 ), q.position().y() + random( -1, 1 ), 0 );
+}
+
+public Particle getRoot(){
+	return this.root;
 }
 
 public Particle addNode(Particle toParticle)
