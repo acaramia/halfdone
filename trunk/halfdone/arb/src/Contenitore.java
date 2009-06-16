@@ -1,5 +1,5 @@
 import java.util.*;
-
+import traer.physics.Particle;
 
 public class Contenitore {
 
@@ -17,4 +17,13 @@ public class Contenitore {
 		tree.add(p);
 	}
 	
+	public void init(arb a){
+		Particle p=a.addNode(a.getRoot());
+//		Particella pc=new Particella();
+//		pc.setP(p);
+//		pc.setId("0");
+//		pc.setValue("root");
+//		this.addParticella(pc);
+	}
+
 }
