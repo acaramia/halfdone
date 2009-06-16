@@ -61,23 +61,24 @@ public class StrutturaAlbero {
     }
 
     // This method visits all the nodes in a DOM tree
-    public static void visitTree(Contenitore tree, Node node, int level) {
+    public static void visitTree(Contenitore tree, String root,Node node, int level) {
         // Process node
+    	String s=tree.ROOT;
         if(node.getNodeName().equalsIgnoreCase("leaf")){
         	//prende il valore diretto
-        	//System.out.println(node.getNodeName()+"="+node.getTextContent());	
-        	String s="n/a";
+        	//System.out.println(node.getNodeName()+"="+node.getTextContent());	        	
         	if(node.hasAttributes()){
         		s=node.getAttributes().getNamedItem("id").getTextContent();        			
         	}
         	System.out.println(node.getNodeName()+"="+s);
+        	tree.addNewLeaf(root,s);
         }
-        if(node.getNodeName().equalsIgnoreCase("tree")){
-        	String s="n/a";
+        if(node.getNodeName().equalsIgnoreCase("tree")){        	
         	if(node.hasAttributes()){
         		s=node.getAttributes().getNamedItem("id").getTextContent();        			
         	}
         	System.out.println(node.getNodeName()+"="+s);
+        	tree.addNewLeaf(root,s);        	
         }
     	
         // If there are any children, visit each one
@@ -86,13 +87,13 @@ public class StrutturaAlbero {
             // Get child node
             Node childNode = list.item(i);    
             // Visit child node
-            visitTree(tree,childNode, level+1);
+            visitTree(tree,s,childNode,level+1);
         }
     }
     
     public static void popola(Contenitore tree){
 		Document doc = parseXmlFile("c://temp//doc.xml", false);   
-	    visitTree(tree,doc, 0);	        	
+	    visitTree(tree,tree.ROOT,doc,0);	        	
     }
     
 	public static void main(String[] args) {
