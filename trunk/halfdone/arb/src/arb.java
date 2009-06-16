@@ -1,5 +1,4 @@
 import processing.core.PApplet;
-import traer.animation.Smoother3D;
 import traer.physics.Particle;
 import traer.physics.ParticleSystem;
 import traer.physics.Spring;
@@ -12,21 +11,22 @@ final float EDGE_STRENGTH = 0.2f;
 final float SPACER_STRENGTH = 1000;
 
 ParticleSystem physics;
-Smoother3D centroid;
+float scale = 1;
+float centroidX = 0;
+float centroidY = 0;
 Particle pmin,root;
 
 // PROCESSING /////////////////////////////////////
 
 public void setup()
 {
-  size( 400, 400 );
+  size( 1500, 1000 );
   smooth();
   frameRate( 24 );
   strokeWeight( 2 );
   ellipseMode( CENTER );       
   
-  physics = new ParticleSystem( 0, 0.25f );
-  centroid = new Smoother3D( 0.8f );
+  physics = new ParticleSystem( 0, 0.1f );
     
   initialize();
   Contenitore c=new Contenitore();
@@ -38,12 +38,12 @@ public void draw()
   physics.tick( 1.0f ); 
   if ( physics.numberOfParticles() > 1 )
     updateCentroid();
-  centroid.tick();
   background( 255 );
+  fill(0);
   
   translate( width/2 , height/2 );
-  scale( centroid.z() );
-  translate( -centroid.x(), -centroid.y() );
+  scale( scale );
+  translate( -centroidX, -centroidY );
 
   drawNetwork();  
 }
@@ -56,10 +56,10 @@ public void drawNetwork()
   float my=mouseY;  
   mx=mx-width/2;
   my=my-height/2;
-  mx=mx/centroid.z();
-  my=my/centroid.z();
-  mx=mx+centroid.x();
-  my=my+centroid.y();
+  mx=mx/scale;
+  my=my/scale;
+  mx=mx+centroidX;
+  my=my+centroidY;
   fill(0,0,255);
   noStroke();
   ellipse( mx,my, NODE_SIZE, NODE_SIZE );
@@ -78,8 +78,7 @@ public void drawNetwork()
     d=dist(v.position().x(), v.position().y(),mx,my);
     if(d<dmin){
       dmin=d;
-      pmin=v;
-      
+      pmin=v;      
     }
   }
   //in rosso il pmin
@@ -146,10 +145,14 @@ public void updateCentroid()
   }
   float deltaX = xMax-xMin;
   float deltaY = yMax-yMin;
+  centroidX = (float) (xMin +0.5*deltaX);
+  centroidY = (float) (yMin +0.5*deltaY);
+  
   if ( deltaY > deltaX )
-    centroid.setTarget( xMin + 0.5f*deltaX, yMin +0.5f*deltaY, height/(deltaY+50) );
+    scale = height/(deltaY+50);
   else
-    centroid.setTarget( xMin + 0.5f*deltaX, yMin +0.5f*deltaY, width/(deltaX+50) );
+    scale = width/(deltaX+50);
+
 }
 
 public void addSpacersToNode( Particle p, Particle r )
@@ -171,7 +174,6 @@ public void initialize()
 {
   physics.clear();
   root=physics.makeParticle();
-  centroid.setValue( 0, 0, 1.0f );
 }
 
 public void addNode(String s)
@@ -187,7 +189,7 @@ public void addNode(String s)
   
   addSpacersToNode( p, q );
   makeEdgeBetween( p, q );
-  p.moveTo( q.position().x() + random( -1, 1 ), q.position().y() + random( -1, 1 ), 0 );
+  p.position().set( q.position().x() + random( -1, 1 ), q.position().y() + random( -1, 1 ), 0 );
 }
 
 public Particle getRoot(){
@@ -199,7 +201,8 @@ public Particle addNode(Particle toParticle)
   Particle newParticle = physics.makeParticle();
   addSpacersToNode( newParticle, toParticle );
   makeEdgeBetween( newParticle, toParticle );
-  newParticle.moveTo( toParticle.position().x() + random( -1, 1 ), toParticle.position().y() + random( -1, 1 ), 0 );
+  //newParticle.moveTo( toParticle.position().x() + random( -1, 1 ), toParticle.position().y() + random( -1, 1 ), 0 );
+  newParticle.position().set( toParticle.position().x()+random( -1, 1 ) , toParticle.position().y()+random( -1, 1 ), 0 );
   return newParticle;
 }
 
