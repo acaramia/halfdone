@@ -92,7 +92,7 @@ public class StrutturaAlbero {
     }
     
     public static void popola(Contenitore tree){
-		Document doc = parseXmlFile("C:\\Docs\\mysourcegoogle\\arb\\doc\\doc.xml", false);   
+		Document doc = parseXmlFile("C:\\Docs\\mysourcegoogle\\arb\\doc\\doc2.xml", false);   
 	    visitTree(tree,tree.ROOT,doc,0);	        	
     }
     
