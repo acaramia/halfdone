@@ -1,7 +1,7 @@
 import processing.core.PApplet;
 
 
-public class arb extends PApplet {
+public class RiassQuad extends PApplet {
 
 // PROCESSING /////////////////////////////////////
 
@@ -41,6 +41,6 @@ public void keyPressed()
 }
 
   static public void main(String args[]) {
-    PApplet.main(new String[] { "--present", "--bgcolor=#666666", "--stop-color=#cccccc", "arb" });
+    PApplet.main(new String[] { "--present", "--bgcolor=#666666", "--stop-color=#cccccc", "RiassQuad" });
   }
 }
