@@ -8,7 +8,8 @@ public class RiassQuad extends PApplet {
 	public Contratti contratti = new Contratti();
 	public Vector<Area> area=new Vector<Area>();
 	public String ctrSelected="";
-	PFont font;
+	private PFont font;
+	private int fontsize=16;
 
 	public void setup() {
 		size(1024, 768);
@@ -18,7 +19,7 @@ public class RiassQuad extends PApplet {
 		// Uncomment the following two lines to see the available fonts 
 		//String[] fontList = PFont.list();
 		//  println(fontList);
-		font = createFont("Arial", 16); 
+		font = createFont("Arial", fontsize); 
 		textFont(font);
 		
 		contratti.setMax(650);
@@ -54,13 +55,13 @@ public class RiassQuad extends PApplet {
 		for (int i = 0; i < setContratti.size(); i++) {
 			Contratto ctr = setContratti.get(i);
 			int lx=(int) (ctr.getProp() * sx);
-			int ly= (int) ((ctr.getMax() - ctr.getMin()) * sy);
+			int ly=(int) ((ctr.getMax() - ctr.getMin()) * sy);
 			if(ctr.getName().equals(this.ctrSelected)){
 				fill(0,255,0);
 			} else {
 				fill(255,255,255);
 			}
-			rect(xo, yo, lx,ly);
+			rect(xo,yo,lx,ly);
 			area.add(new Area(xo,yo,lx,ly,ctr.getName()));
 			xo += ctr.getProp() * sx;
 			xo += contratti.getSpaziaturaRettangoli() * sx;
@@ -76,7 +77,12 @@ public class RiassQuad extends PApplet {
 				//rect(area.elementAt(i).x1,area.elementAt(i).y1,area.elementAt(i).x2,area.elementAt(i).y2);
 				Contratto c=contratti.getContrattoByName(area.elementAt(i).name);
 				if(c!=null){
-					text(c.getName(),0,10);
+					fill(0,0,0);
+					String s=c.toString(); 
+					//stroke()
+					x=(int) (area.elementAt(i).x1+area.elementAt(i).x2/2-textWidth(s)/2);
+					y=area.elementAt(i).y1+area.elementAt(i).y2/2+fontsize/2;
+					text(s,x,y);
 				}
 			}
 		}		
