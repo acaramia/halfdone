@@ -8,6 +8,7 @@ public class RiassQuad extends PApplet {
 	public Contratti contratti = new Contratti();
 	public Vector<Area> area=new Vector<Area>();
 	public String ctrSelected="";
+	public String ctrMouse="";
 	private PFont font;
 	private int fontsize=16;
 
@@ -47,7 +48,7 @@ public class RiassQuad extends PApplet {
 		area.clear();
 		int xo = 0;
 		int yo = (int) (this.getHeight() * 0.7);// piazza fascia a 1/3 dal fondo
-		int ym = this.getHeight();
+		int ym=this.getHeight();
 		float sx = this.getWidth() / contratti.getSommaLarghezze();
 		float sy = (this.getHeight() - yo)
 				/ (float) contratti.getMassimaAltezza();
@@ -61,10 +62,22 @@ public class RiassQuad extends PApplet {
 			} else {
 				fill(255,255,255);
 			}
-			rect(xo,yo,lx,ly);
-			area.add(new Area(xo,yo,lx,ly,ctr.getName()));
+			int y=(int) (ym-ctr.getMax()*sy);
+			rect(xo,y,lx,ly);
+			area.add(new Area(xo,y,lx,ly,ctr.getName()));
 			xo += ctr.getProp() * sx;
 			xo += contratti.getSpaziaturaRettangoli() * sx;
+			//scrive label
+			if(ctr.getName().equals(this.ctrMouse)){
+				Contratto c=contratti.getContrattoByName(ctrMouse);
+				if(c!=null){
+					fill(0,0,0);
+					String s=c.toString(); 
+					int tx=(int) (area.elementAt(i).x1+area.elementAt(i).x2/2-textWidth(s)/2);
+					int ty=area.elementAt(i).y1+area.elementAt(i).y2/2+fontsize/2;
+					text(s,tx,ty);
+				}
+			}
 		}
 	}
 	
@@ -75,15 +88,7 @@ public class RiassQuad extends PApplet {
 		for(int i=0;i<area.size();i++){
 			if(area.elementAt(i).isInside(x,y)){				
 				//rect(area.elementAt(i).x1,area.elementAt(i).y1,area.elementAt(i).x2,area.elementAt(i).y2);
-				Contratto c=contratti.getContrattoByName(area.elementAt(i).name);
-				if(c!=null){
-					fill(0,0,0);
-					String s=c.toString(); 
-					//stroke()
-					x=(int) (area.elementAt(i).x1+area.elementAt(i).x2/2-textWidth(s)/2);
-					y=area.elementAt(i).y1+area.elementAt(i).y2/2+fontsize/2;
-					text(s,x,y);
-				}
+				this.ctrMouse=area.elementAt(i).name;
 			}
 		}		
 	}
