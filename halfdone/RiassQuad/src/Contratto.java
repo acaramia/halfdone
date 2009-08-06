@@ -4,16 +4,18 @@ public class Contratto {
 	private int min=0;
 	private int max=0;
 	private int prop=0;
+	private String name="";
 	
-	public Contratto(int max, int min, int prop) {
+	public Contratto(int max, int min, int prop,String name) {
 		super();
 		this.max = max;
 		this.min = min;
 		this.prop = prop;
+		this.name=name;
 	}
 
 	public String toString(){
-		return prop+"% da "+min+" a "+max;
+		return name+":"+prop+"% da "+min+" a "+max;
 	}
 	
 	public int getMin() {
@@ -40,9 +42,7 @@ public class Contratto {
 		this.prop = prop;
 	}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+	public String getName() {
+		return name;
+	} 
 }
