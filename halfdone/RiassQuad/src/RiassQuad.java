@@ -6,7 +6,8 @@ import processing.core.PFont;
 public class RiassQuad extends PApplet {
 
 	public Contratti contratti = new Contratti();
-	public Vector<Area> area=new Vector<Area>();
+	public Vector<Area> area=new Vector<Area>();  //aree in basso per l'elenco rettangoli
+	public Vector<String> disegno=new Vector<String>();  //area disegno grafico reale, ordinata
 	public String ctrSelected="";
 	public String ctrMouse="";
 	private PFont font;
@@ -29,26 +30,39 @@ public class RiassQuad extends PApplet {
 		contratti.addContratto(200, 100, 10,"c3");
 		contratti.addContratto(650, 200, 10,"c4");
 		contratti.addContratto(650, 100, 55,"c5");
+		contratti.pack();// elimina spaziature inutili
 	}
 
 	public void draw() {
 		background(192,192,192);		
 		disegnaRettangoli();
+		disegnaGrafico();
+	}
+
+	private void disegnaGrafico() {
+		fill(255,255,255);
 		Vector<Contratto> setContratti = contratti.getSet();
 		int xo = 0;
-		for (int i = 0; i < setContratti.size(); i++) {
-			Contratto ctr = setContratti.get(i);
-			float sx = this.getWidth() / 100;
-			// rect(xo,ctr.getMin(),ctr.getProp()*sx,ctr.getMax()-ctr.getMin());
-			// xo+=q.getProp()*sx;
+		int yo = 0;
+		int ym = (int) (this.getHeight()*0.7);
+		float sx = this.getWidth() / 100;
+		float sy = ( ym - yo)/ (float) contratti.getMassimaAltezza();
+		for (int i = 0; i < disegno.size(); i++) {
+			String n=disegno.elementAt(i);
+			Contratto ctr = contratti.getContrattoByName(n);
+			int lx=(int) (ctr.getProp() * sx);
+			int ly=(int) ((ctr.getMax() - ctr.getMin()) * sy);
+			int y=(int) (ym-ctr.getMax()*sy);			
+			rect(xo,y,lx,ly);
+			xo+=lx;
 		}
 	}
 
 	private void disegnaRettangoli() {
 		area.clear();
 		int xo = 0;
-		int yo = (int) (this.getHeight() * 0.7);// piazza fascia a 1/3 dal fondo
-		int ym=this.getHeight();
+		int ym = this.getHeight();
+		int yo = (int) (ym * 0.7);// piazza fascia a 1/3 dal fondo
 		float sx = this.getWidth() / contratti.getSommaLarghezze();
 		float sy = (this.getHeight() - yo)
 				/ (float) contratti.getMassimaAltezza();
@@ -57,27 +71,31 @@ public class RiassQuad extends PApplet {
 			Contratto ctr = setContratti.get(i);
 			int lx=(int) (ctr.getProp() * sx);
 			int ly=(int) ((ctr.getMax() - ctr.getMin()) * sy);
+			int y=(int) (ym-ctr.getMax()*sy);
+			area.add(new Area(xo,y,lx,ly,ctr.getName()));
 			if(ctr.getName().equals(this.ctrSelected)){
 				fill(0,255,0);
 			} else {
 				fill(255,255,255);
-			}
-			int y=(int) (ym-ctr.getMax()*sy);
+			}			
 			rect(xo,y,lx,ly);
-			area.add(new Area(xo,y,lx,ly,ctr.getName()));
-			xo += ctr.getProp() * sx;
+			xo += lx;
 			xo += contratti.getSpaziaturaRettangoli() * sx;
-			//scrive label
 			if(ctr.getName().equals(this.ctrMouse)){
-				Contratto c=contratti.getContrattoByName(ctrMouse);
-				if(c!=null){
-					fill(0,0,0);
-					String s=c.toString(); 
-					int tx=(int) (area.elementAt(i).x1+area.elementAt(i).x2/2-textWidth(s)/2);
-					int ty=area.elementAt(i).y1+area.elementAt(i).y2/2+fontsize/2;
-					text(s,tx,ty);
-				}
+				stampaLabel(this.ctrMouse,i);
 			}
+		}
+	}
+
+	// il paramentro i andra' tolto
+	private void stampaLabel(String name,int i){
+		Contratto c=contratti.getContrattoByName(ctrMouse);
+		if(c!=null){
+			fill(0,0,0);
+			String s=c.toString(); 
+			int tx=(int) (area.elementAt(i).x1+area.elementAt(i).x2/2-textWidth(s)/2);
+			int ty=area.elementAt(i).y1+area.elementAt(i).y2/2+fontsize/2;
+			text(s,tx,ty);
 		}
 	}
 	
@@ -101,6 +119,7 @@ public class RiassQuad extends PApplet {
 			if(area.elementAt(i).isInside(x,y)){				
 				//rect(area.elementAt(i).x1,area.elementAt(i).y1,area.elementAt(i).x2,area.elementAt(i).y2);
 				this.ctrSelected=area.elementAt(i).name;
+				disegno.add(this.ctrSelected);
 			}
 		}
 	}
