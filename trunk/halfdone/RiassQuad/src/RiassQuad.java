@@ -30,7 +30,6 @@ public class RiassQuad extends PApplet {
 		contratti.addContratto(200, 100, 10,"c3");
 		contratti.addContratto(650, 200, 10,"c4");
 		contratti.addContratto(650, 100, 55,"c5");
-		contratti.pack();// elimina spaziature inutili
 	}
 
 	public void draw() {
@@ -47,14 +46,19 @@ public class RiassQuad extends PApplet {
 		int ym = (int) (this.getHeight()*0.7);
 		float sx = this.getWidth() / 100;
 		float sy = ( ym - yo)/ (float) contratti.getMassimaAltezza();
+		
+		contratti.azzeraProfilo();
 		for (int i = 0; i < disegno.size(); i++) {
 			String n=disegno.elementAt(i);
 			Contratto ctr = contratti.getContrattoByName(n);
+			xo=(int) (contratti.getMassimoProfilo(ctr)*sx);
+			contratti.setProfilo(ctr);
+			
 			int lx=(int) (ctr.getProp() * sx);
 			int ly=(int) ((ctr.getMax() - ctr.getMin()) * sy);
 			int y=(int) (ym-ctr.getMax()*sy);			
 			rect(xo,y,lx,ly);
-			xo+=lx;
+			//xo+=lx;
 		}
 	}
 

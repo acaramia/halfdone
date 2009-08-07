@@ -7,6 +7,7 @@ public class Contratti {
 	private int massimaAltezza=0;        // massima altezza rettangoli
 	private int spaziaturaRettangoli=5;  // distanza minima per visualizzazione in basso
 	private int sommaLarghezze=0;        // somma delle larghezze rettangoli
+	private int profilo[];
 
 	public Contratti() {
 		super();
@@ -25,7 +26,9 @@ public class Contratti {
 		set.add(c);
 		if(max>massimaAltezza)
 			massimaAltezza=max;
-		sommaLarghezze+=prop+spaziaturaRettangoli;
+		sommaLarghezze+=prop;
+		if(set.size()>2)		
+			sommaLarghezze+=spaziaturaRettangoli;
 	}
 
 	public Contratto getContrattoByName(String name){
@@ -38,7 +41,14 @@ public class Contratti {
 	}
 	
 	public void setMax(int i) {
-		max=i;		
+		max=i;	
+		profilo=new int[max];
+		azzeraProfilo();
+	}
+
+	public void azzeraProfilo() {
+		for(int j=0;j<max;j++)
+			profilo[j]=0;
 	}
 
 	public void addContratto(int prop,String name) {
@@ -57,8 +67,18 @@ public class Contratti {
 		return spaziaturaRettangoli;
 	}
 
-	public void pack() {
-		sommaLarghezze-=spaziaturaRettangoli;	
-		//si potrebbe mettere spazio=rettangoli-1
+	// popola il profilo corretto
+	public void setProfilo(Contratto ctr) {
+		for(int y=ctr.getMin();y<ctr.getMax();y++)
+			profilo[y]+=ctr.getProp();		
+	}
+
+	//determina massimo profilo nell'intervallo del contratto
+	public int getMassimoProfilo(Contratto ctr) {
+		int maxp=0;
+		for(int y=ctr.getMin();y<ctr.getMax();y++)
+			if(profilo[y]>maxp)
+				maxp=profilo[y];
+		return maxp;
 	}
 }
