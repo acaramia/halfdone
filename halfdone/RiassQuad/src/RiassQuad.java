@@ -12,6 +12,8 @@ public class RiassQuad extends PApplet {
 	public String ctrMouse="";
 	private PFont font;
 	private int fontsize=16;
+	private boolean mostraHelp=true;
+	private boolean mostraProfilo=true;
 
 	public void setup() {
 		size(1024, 768);
@@ -24,6 +26,7 @@ public class RiassQuad extends PApplet {
 		font = createFont("Arial", fontsize); 
 		textFont(font);
 		
+		//dati dei contratti
 		contratti.setMax(650);
 		contratti.addContratto(10,"c1");
 		contratti.addContratto(100, 0, 65,"c2");
@@ -33,9 +36,43 @@ public class RiassQuad extends PApplet {
 	}
 
 	public void draw() {
-		background(192,192,192);		
+		background(192,192,192);	
+		stroke(0,0,0);
 		disegnaRettangoli();
 		disegnaGrafico();
+		if(mostraProfilo)
+			showProfilo();
+		if(mostraHelp)
+			help();		
+	}
+
+	private void showProfilo() {
+		//mettere in procedura
+		int xo = 0;
+		int yo = 0;
+		int ym = (int) (this.getHeight()*0.7);
+		float sx = this.getWidth() / 100;
+		float sy = ( ym - yo)/ (float) contratti.getMassimaAltezza();
+		int[] prof=contratti.getProfilo();
+		fill(0,0,255);
+		stroke(0,0,255);
+		for(int y=0;y<prof.length;y++){
+			ellipse(prof[y]*sx,ym-y*sy,1,1);
+		}		
+	}
+
+	private void help() {
+		fill(0,0,0);		 
+		int tx=(int) (this.getWidth()*0.3);
+		int ty=(int) (this.getHeight()*0.3);
+		text("H per help on/off",tx,ty);
+		ty+=fontsize*2;//spazio tra le righe
+		text("z resetta area del grafico (toglie tutti i rettangoli)",tx,ty);
+		ty+=fontsize*2;//spazio tra le righe
+		text("p mostra il profilo on/off",tx,ty);
+		ty+=fontsize*2;//spazio tra le righe		
+		text("click sui rettangoli in basso per aggiungerli al grafico",tx,ty);
+		ty+=fontsize*2;//spazio tra le righe
 	}
 
 	private void disegnaGrafico() {
@@ -129,10 +166,16 @@ public class RiassQuad extends PApplet {
 	}
 
 	public void keyPressed() {
-		if (key == 'i') {
+		if (key == 'z') {
+			disegno.clear();
 			return;
 		}
-		if (key == '1') {
+		if (key == 'h') {
+			mostraHelp = !mostraHelp;
+			return;
+		}
+		if (key == 'p') {
+			mostraProfilo = !mostraProfilo;
 			return;
 		}
 		if (key == '2') {

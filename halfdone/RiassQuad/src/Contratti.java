@@ -9,6 +9,10 @@ public class Contratti {
 	private int sommaLarghezze=0;        // somma delle larghezze rettangoli
 	private int profilo[];
 
+	public int[] getProfilo() {
+		return profilo;
+	}
+
 	public Contratti() {
 		super();
 	}
@@ -69,6 +73,7 @@ public class Contratti {
 
 	// popola il profilo corretto
 	public void setProfilo(Contratto ctr) {
+		//il < evita sovrapposizione 0-100 e 100-650, altrimenti da gestire con -1 su setMax o setMin
 		for(int y=ctr.getMin();y<ctr.getMax();y++)
 			profilo[y]+=ctr.getProp();		
 	}
