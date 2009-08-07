@@ -4,10 +4,9 @@ public class Contratti {
 
 	private Vector<Contratto> set=new Vector<Contratto>();
 	private int max=0;
-	private int massimaAltezza=0;  // massima altezza rettangoli
-	private int sommaLarghezze=0; // somma delle larghezze rettangoli
+	private int massimaAltezza=0;        // massima altezza rettangoli
 	private int spaziaturaRettangoli=5;  // distanza minima per visualizzazione in basso
-
+	private int sommaLarghezze=0;        // somma delle larghezze rettangoli
 
 	public Contratti() {
 		super();
@@ -45,6 +44,7 @@ public class Contratti {
 	public void addContratto(int prop,String name) {
 		this.addContratto(this.max,0,prop,name);		
 	}
+	
 	public int getMassimaAltezza() {
 		return massimaAltezza;
 	}
@@ -55,5 +55,10 @@ public class Contratti {
 
 	public int getSpaziaturaRettangoli() {
 		return spaziaturaRettangoli;
+	}
+
+	public void pack() {
+		sommaLarghezze-=spaziaturaRettangoli;	
+		//si potrebbe mettere spazio=rettangoli-1
 	}
 }
