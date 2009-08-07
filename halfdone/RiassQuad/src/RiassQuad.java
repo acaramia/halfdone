@@ -88,13 +88,13 @@ public class RiassQuad extends PApplet {
 		for (int i = 0; i < disegno.size(); i++) {
 			String n=disegno.elementAt(i);
 			Contratto ctr = contratti.getContrattoByName(n);
-			xo=(int) (contratti.getMassimoProfilo(ctr)*sx);
-			contratti.setProfilo(ctr);
+			xo=contratti.getMassimoProfilo(ctr);
+			contratti.setProfilo(ctr,xo);
 			
 			int lx=(int) (ctr.getProp() * sx);
 			int ly=(int) ((ctr.getMax() - ctr.getMin()) * sy);
 			int y=(int) (ym-ctr.getMax()*sy);			
-			rect(xo,y,lx,ly);
+			rect(xo*sx,y,lx,ly);
 			//xo+=lx;
 		}
 	}

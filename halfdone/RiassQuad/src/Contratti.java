@@ -72,10 +72,10 @@ public class Contratti {
 	}
 
 	// popola il profilo corretto
-	public void setProfilo(Contratto ctr) {
+	public void setProfilo(Contratto ctr, int xo) {
 		//il < evita sovrapposizione 0-100 e 100-650, altrimenti da gestire con -1 su setMax o setMin
 		for(int y=ctr.getMin();y<ctr.getMax();y++)
-			profilo[y]+=ctr.getProp();		
+			profilo[y]=xo+ctr.getProp();		
 	}
 
 	//determina massimo profilo nell'intervallo del contratto
