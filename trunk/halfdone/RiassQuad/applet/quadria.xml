@@ -11,8 +11,8 @@ thumbnail= "http://www.google.it/intl/it_it/images/logo.gif"
 <script src="http://java.com/js/deployJava.js"></script>
 <div id='testdiv'>
 <script>
-var jarUrl = "http://halfdone.googlecode.com/svn/trunk/halfdone/RiassQuad/applet/quad.jar:http://halfdone.googlecode.com/svn/trunk/halfdone/RiassQuad/applet/core.jar";
-deployJava.runApplet({archive:jarUrl,code:"RiassQuad",width:1024, height:768},null,"1.6");
+var jarUrl = "http://halfdone.googlecode.com/svn/trunk/halfdone/RiassQuad/applet/quad.jar,http://halfdone.googlecode.com/svn/trunk/halfdone/RiassQuad/applet/core.jar";
+deployJava.runApplet({archive:jarUrl,code:"RiassQuad.class",width:1024, height:768},null,"1.6");
 </script>
 </div>
 
