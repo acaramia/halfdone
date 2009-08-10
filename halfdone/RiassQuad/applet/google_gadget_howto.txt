@@ -1,0 +1,13 @@
+andare su 
+  http://code.google.com/intl/it-IT/apis/gadgets/docs/legacy/gs.html#GGE
+  
+  incollare il codice xml del gadget nella finestra 
+  fare file|save e dare un nome 
+  fare file|publish
+  vedere l'url (Your gadget is located here.)
+  andare su google sites, modifica pagina, fare inserisci|ulteriori gadget| per url
+  inserire url del gadget
+  inserire larghezza e altezza, ok.
+  
+istruzioni su 
+  http://sites.google.com/site/jtvmaker/Home/how-to-insert-java-applet-in-googlesites-gs-or-your-own-site-with-google-gadget
