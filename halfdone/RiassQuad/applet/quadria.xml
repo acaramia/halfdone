@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+<ModulePrefs title="QuadRia"
+height="1024" width="768" scrolling="false"
+author="stevpan" author_email="stevpan@gmail.com"
+description="quadria test"
+thumbnail= "http://www.google.it/intl/it_it/images/logo.gif"
+/>
+<Content type="html"><![CDATA[
+
+<script src="http://java.com/js/deployJava.js"></script>
+<div id='testdiv'>
+<script>
+var jarUrl = "http://halfdone.googlecode.com/svn/trunk/halfdone/RiassQuad/applet/quad.jar:http://halfdone.googlecode.com/svn/trunk/halfdone/RiassQuad/applet/core.jar";
+deployJava.runApplet({archive:jarUrl,code:"RiassQuad",width:1024, height:768},null,"1.6");
+</script>
+</div>
+
+]]></Content>
+</Module>
+
+
